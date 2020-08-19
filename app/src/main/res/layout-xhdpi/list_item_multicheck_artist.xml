@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/child_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/list_child_back"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/album_imageViews"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="5dp"
+        android:src="@drawable/loading_art"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <CheckedTextView
+        android:id="@+id/list_item_multicheck_artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/album_imageViews"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="SongNameHere"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/list_title"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center" />
+
+
+</RelativeLayout>

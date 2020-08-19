@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style=" "
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dip"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <RelativeLayout
+        android:id="@+id/song_panel"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@drawable/mp_nowplaying_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/simpleTextSwitcher"
+            android:layout_alignStart="@+id/artistTextSwitcher"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/transparent"
+            android:elevation="6dp"
+            android:ellipsize="end"
+            android:fadingEdge="horizontal"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:isScrollContainer="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLength="200"
+            android:paddingEnd="15dp"
+            android:paddingStart="1dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/song_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/background_light"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.177" />
+
+        <TextSwitcher
+            android:id="@+id/simpleTextSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/albumLibrary"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/artistTextSwitcher"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:filterTouchesWhenObscured="false"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:text="@string/artist_name"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/albumLibrary"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/album_artwork"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/matte_albums"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="209dp" />
+
+
+        <TextSwitcher
+            android:id="@+id/artistTextSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignBaseline="@+id/simpleTextSwitcher"
+            android:layout_alignBottom="@+id/simpleTextSwitcher"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/albumLibrary"
+            android:ellipsize="none"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="@string/album"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomView"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:background="@drawable/crop_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/PlayPause"
+            android:layout_width="79dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/btn_play_backgnd"
+            android:contentDescription="@string/play"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/btn_play" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="61dp"
+            android:layout_height="58dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_prevnext_bg"
+            android:contentDescription="@string/next"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/prev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/PlayPause"
+            app:layout_constraintTop_toTopOf="@+id/prev"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/btn_next" />
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="63dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_prevnext_bg"
+            android:contentDescription="@string/previous"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/PlayPause"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/PlayPause"
+            app:srcCompat="@drawable/btn_previous" />
+
+
+        <ImageButton
+            android:id="@+id/shuffle"
+            android:layout_width="54dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/suffle"
+            android:paddingEnd="0dp"
+            android:paddingStart="-8dp"
+            android:tint="@android:color/holo_blue_bright"
+            app:layout_constraintBottom_toBottomOf="@+id/prev"
+            app:layout_constraintEnd_toStartOf="@+id/prev"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/prev"
+            app:srcCompat="@drawable/shuffle_on" />
+
+        <ImageButton
+            android:id="@+id/repeat"
+            android:layout_width="57dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/todo"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:tint="@android:color/holo_blue_bright"
+            app:layout_constraintBottom_toBottomOf="@+id/next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/next"
+            app:layout_constraintTop_toTopOf="@+id/next"
+            app:layout_constraintVertical_bias="0.882"
+            app:srcCompat="@drawable/repeat_all" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:background="@drawable/crop_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/song_panel">
+
+        <ImageButton
+            android:id="@+id/play_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/play_list"
+            android:scaleType="fitXY"
+            android:src="@drawable/playlist_cd"
+            app:layout_constraintBottom_toBottomOf="@+id/sleep_timer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sleep_timer"
+            app:layout_constraintVertical_bias="0.909" />
+
+        <ImageButton
+            android:id="@+id/sleep_timer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/sleep_timer"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleep_times"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/play_list"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/currentStatusLayout"
+            android:layout_width="187dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/equalizerbtn"
+            app:layout_constraintEnd_toStartOf="@+id/play_list"
+            app:layout_constraintStart_toEndOf="@+id/sleep_timer"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextSwitcher
+                android:id="@+id/track_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/track"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/track_no_switcher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextSwitcher
+                android:id="@+id/track_no_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="15dp"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/_1_100"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/track_switcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/track_switcher"
+                app:layout_constraintTop_toTopOf="@+id/track_switcher"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextSwitcher
+                android:id="@+id/statusTextSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/bitrate"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/statusValueSwitcher"
+                app:layout_constraintStart_toStartOf="@+id/track_switcher"
+                app:layout_constraintTop_toBottomOf="@+id/track_switcher"
+                app:layout_constraintVertical_bias="0.272" />
+
+
+            <TextSwitcher
+                android:id="@+id/statusValueSwitcher"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:text="@string/_128kbps"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/statusTextSwitcher"
+                app:layout_constraintStart_toEndOf="@+id/statusTextSwitcher"
+                app:layout_constraintTop_toTopOf="@+id/statusTextSwitcher"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/timer_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="344dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="1dp"
+            android:text="Loading"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sleep_timer"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/equalizerbtn"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.303"
+            app:layout_constraintStart_toEndOf="@+id/timer_sync"
+            app:layout_constraintTop_toBottomOf="@+id/currentStatusLayout"
+            app:srcCompat="@drawable/eq_icons" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/middleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/crop_center"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/metaLayoutView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/metaLayoutView"
+        android:layout_width="0dp"
+        android:layout_height="89dp"
+        android:background="@drawable/crop_meta_tag"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/seekbar_wrapper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/snackbarLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <SeekBar
+                android:id="@+id/music_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hapticFeedbackEnabled="true"
+                android:max="100"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="6dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress"
+                android:thumb="@drawable/seekbar_thumb"
+                android:thumbOffset="5dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:text="@string/current_time"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekbar_wrapper" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/snackbarLayout"
+            android:layout_width="167dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/end_time"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toEndOf="@+id/startTime"
+            app:layout_constraintTop_toBottomOf="@+id/seekbar_wrapper"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <TextSwitcher
+                android:id="@+id/bitrateSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="start"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/bitrate"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18sp"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextSwitcher
+                android:id="@+id/bitValueSwitcher"
+                android:layout_width="95dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="5dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="18dp"
+                android:text="@string/_128kbps"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/total_time"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/startTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toEndOf="@+id/startTime"
+            app:layout_constraintTop_toTopOf="@+id/startTime" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

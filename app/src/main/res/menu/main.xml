@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/toggle_notyfication"
+        android:icon="@drawable/notification_style"
+        android:title="Notification Toggle"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/toggle_visualizer"
+        android:icon="@drawable/sound"
+        android:title="Visualization Toggle"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/more_options"
+        android:icon="@drawable/more_option"
+        android:title="More Options"
+        app:showAsAction="always">
+
+    <menu>
+
+    <item
+        android:id="@+id/action_sona_font"
+        android:orderInCategory="1"
+        android:title="Font Chooser"
+        android:icon="@drawable/font_style"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/setting"
+        android:orderInCategory="2"
+        android:title="Setttings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_refresh_media"
+        android:orderInCategory="3"
+        android:icon="@drawable/update"
+        android:title="Refresh Library"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_terminate"
+        android:orderInCategory="4"
+        android:icon="@drawable/terminate"
+        android:title="Terminate Player"
+        app:showAsAction="never" />
+
+    </menu>
+    </item>
+</menu>

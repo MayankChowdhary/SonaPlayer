@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bass_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eq_back"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+        android:id="@+id/virtual_knob_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/virtualKnob"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_full"
+            android:drawingCacheQuality="high"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_viewpager"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523"
+            app:main_circle_color="@android:color/transparent"
+            app:max="10"
+            app:min="1"
+            app:progress_primary_color="@color/knobProgressBlue"
+            app:progress_primary_stroke_width="4"
+
+            app:progress_radius="49"
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/virtual_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="VIRTUALIZER"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trable_knob_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/virtual_knob_wrapper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/virtual_knob_wrapper">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/trableKnob"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:progress_radius="49"
+            app:progress_primary_stroke_width="4"
+            android:layout_weight="1"
+            android:background="@drawable/round_full"
+            android:drawingCacheQuality="high"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_viewpager"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523"
+            app:main_circle_color="@android:color/transparent"
+            app:max="10"
+            app:min="0"
+            app:progress_primary_color="@color/knobProgressBlue"
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/trable_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="TREBLE"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bass_knob_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/virtual_knob_wrapper"
+        app:layout_constraintEnd_toStartOf="@+id/virtual_knob_wrapper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/virtual_knob_wrapper"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/bassKnob"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:progress_radius="49"
+            app:progress_primary_stroke_width="4"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@drawable/round_full"
+            android:drawingCacheQuality="high"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_viewpager"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523"
+            app:main_circle_color="@android:color/transparent"
+            app:max="10"
+            app:min="1"
+            app:progress_primary_color="@color/knobProgressBlue"
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/bass_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="BASS BOOST"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

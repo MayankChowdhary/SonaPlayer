@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/child_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/album_list_item"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/album_imageViews"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="5dp"
+        android:src="@drawable/loading_art"
+        app:civ_border_color="@color/Bluecolor"
+        app:civ_border_width="1dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/tv_albums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@id/option_button"
+        android:layout_toEndOf="@+id/album_imageViews"
+        android:ellipsize="end"
+        android:fadingEdge="horizontal"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:singleLine="true"
+        android:text="SongNameHere"
+        android:textAlignment="textStart"
+        android:textColor="@color/LightBlue"
+        android:textSize="@dimen/list_title" />
+
+    <CheckBox
+        android:id="@+id/mark_box_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/markbox_circle"
+        android:buttonTint="@color/LightBlue"
+        android:clickable="false"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/option_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/more_option" />
+
+</RelativeLayout>

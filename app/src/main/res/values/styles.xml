@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+        <item name="android:editTextColor">@android:color/holo_blue_bright</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="colorControlActivated">#46bdbf</item>
+    </style>
+
+    <style name="myDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/DialogButtonStyle</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/holo_blue_bright</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NavigationTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NavigationHead">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#639aff</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.Bridge" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.MaterialComponents.Bridge" />
+
+
+    <style name="popupTheme" parent="@style/Theme.AppCompat.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <style name="SlideShowTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="PreferencesTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/window_bg</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@android:color/holo_blue_bright</item>
+        <item name="android:textColorTertiary">@color/cyan</item>
+        <item name="android:listDivider">@color/divider_grey</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="MyDarkToolbarStyle" parent="Theme.MaterialComponents.Bridge">
+        <item name="android:colorBackground">@color/tool_menu_popup</item>
+        <item name="android:textColor">@color/cyanMix</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out_dialog</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/holo_blue_bright</item>
+        <item name="tabSelectedTextColor">@android:color/holo_blue_bright</item>
+        <item name="tabTextColor">@android:color/white</item>
+        <item name="tabBackground">@drawable/tab_back_selector</item>
+    </style>
+
+    <style name="DialogFragment" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

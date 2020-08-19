@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="list_animation"
+        app:title="Playlist Animation"
+        app:summary="Animation during scrolling media lists"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="auto_scroll_title"
+        app:title="Auto Scroll Song Title In Playlist"
+        app:summary="Scrolls longer song Title text automatically in Media Lists "
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="alter_eq_mode"
+        app:title="Alter Equalizer Mode"
+        app:summary="Only for older devices that do not support All sound enhancements together"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="colorized_mode"
+        app:title="Colorized Notification"
+        app:summary="Enables Multiple Colors in Advanced Notification"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <DropDownPreference
+        app:defaultValue="6"
+        app:entries="@array/animation_entries"
+        app:entryValues="@array/animation_values"
+        app:key="window_enter_anim"
+        app:summary="Random"
+        app:title="Window Enter Animation"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <DropDownPreference
+        app:defaultValue="0"
+        app:entries="@array/animation_entries"
+        app:entryValues="@array/animation_values"
+        app:key="window_exit_anim"
+        app:summary="Random"
+        app:title="Window Exit Animation"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+</androidx.preference.PreferenceScreen>

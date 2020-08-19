@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_window_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_header"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/file_info_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Info"
+            android:icon="@drawable/file_tab" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tag_info_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID3 Tags"
+            android:icon="@drawable/tag_tab"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_header">
+
+    </RelativeLayout>
+
+</RelativeLayout>

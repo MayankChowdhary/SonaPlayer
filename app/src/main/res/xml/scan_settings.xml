@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.McDevelopers.sonaplayer.PreferenceActivity.CustomVideoPreference
+            app:key="videoFolder"
+            app:title="Select video folder"
+            app:layout="@layout/pref_video_layout"
+            app:summary="Currently All folders are Selected"
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true">
+        </com.McDevelopers.sonaplayer.PreferenceActivity.CustomVideoPreference>
+        <com.McDevelopers.sonaplayer.PreferenceActivity.CustomAlbumArtPreference
+            app:key="albumArtFolder"
+            app:title="Select album art folder"
+            app:layout="@layout/pref_albumart_layout"
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:summary="Currently no folder Selected">
+        </com.McDevelopers.sonaplayer.PreferenceActivity.CustomAlbumArtPreference>
+
+        <DropDownPreference
+            app:defaultValue="60000"
+            app:entries="@array/pref_audio_reject_entries"
+            app:entryValues="@array/pref_audio_reject_values"
+            app:key="pref_reject_audio"
+            app:summary="60 Seconds"
+            app:icon="@drawable/reject_audio"
+            app:title="Reject audio less than"
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"/>
+        <DropDownPreference
+            app:defaultValue="120000"
+            app:entries="@array/pref_video_reject_entries"
+            app:entryValues="@array/pref_video_reject_values"
+            app:key="pref_reject_video"
+            app:summary="120 Seconds"
+            app:icon="@drawable/reject_video"
+            app:title="Reject video less than"
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"/>
+</androidx.preference.PreferenceScreen>

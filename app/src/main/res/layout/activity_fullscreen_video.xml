@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_parents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.universalvideoview.UniversalVideoView
+            android:id="@+id/videoViewFullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            app:uvv_autoRotation="true"
+            app:uvv_fitXY="false" />
+
+        <com.universalvideoview.UniversalMediaController
+            android:id="@+id/media_controller"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            app:uvv_scalable="true" />
+
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rotate_layout_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            app:angle="90">
+
+            <SeekBar
+                android:id="@+id/video_full_seekBar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:maxHeight="6dp"
+                android:minHeight="6dp"
+                android:progressTint="@color/cyan"
+                android:thumbTint="@color/cyan" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rotate_layout_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            app:angle="90">
+
+            <SeekBar
+                android:id="@+id/video_brightfull_seekBar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:backgroundTint="@color/black"
+                android:maxHeight="6dp"
+                android:minHeight="6dp"
+                android:progressTint="@color/cyan"
+                android:thumbTint="@color/cyan" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

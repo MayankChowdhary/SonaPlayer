@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Sona Player</string>
+    <string name="sona_banner_id">ca-app-pub-5214359706430490/6545043468</string>
+    <string name="sona_admob_id">ca-app-pub-5214359706430490~7108026539</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="play">Play</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="sona_player">Sona Player</string>
+    <string name="todo">TODO</string>
+    <string name="album_artwork">album_artwork</string>
+    <string name="artist_name">Album Name Here</string>
+    <string name="song_name">Welcome to Sona Player</string>
+    <string name="sleep_timer">sleep_timer</string>
+    <string name="play_list">play_list</string>
+    <string name="total_time">5:00</string>
+    <string name="current_time">0:00</string>
+    <string name="panel_backimage">panel_backimage</string>
+    <string name="suffle">suffle</string>
+    <string name="album">Album:</string>
+    <string name="track">Track :</string>
+    <string name="_1_100">N/A</string>
+    <string name="bitrate">Bitrate:</string>
+    <string name="_128kbps">128kbps</string>
+    <string name="cd_repeat">Repeat one or all</string>
+    <string name="cd_previous">Skip backwards</string>
+    <string name="cd_play">Play and pause</string>
+    <string name="cd_next">Skip forwards</string>
+    <string name="app_logo">app_logo</string>
+    <string name="stop_button">stop_button</string>
+    <string name="Song_track_number">Track_num</string>
+    <string name="fast_forward">fast_forward</string>
+    <string name="rewind_button">rewind_button</string>
+    <string name="album_art">Album_Art</string>
+    <string name="_05_00">05:00</string>
+    <string name="_20_00">20:00</string>
+
+
+    <string name="label_stop">Stop</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_play">Play</string>
+    <string name="label_play_pause">Play and pause toggle</string>
+    <string name="label_previous">Previous track</string>
+    <string name="label_next">Next track</string>
+
+    <string name="title_activity_fullscreen_video">FullscreenVideoActivity</string>
+
+
+    <string name="folder_chooser_title">Choose Folder</string>
+
+    <string name="title_activity_slideshow">Slideshow</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+</resources>

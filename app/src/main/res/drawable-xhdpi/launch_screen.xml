@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launch_screen" android:opacity="opaque">
+
+
+    <item android:drawable="@drawable/splash_background" android:gravity="fill"/>
+
+    <item
+
+        android:top="60dp">
+
+
+        <bitmap
+            android:gravity="top"
+            android:src="@drawable/sona_dvd" />
+
+
+    </item>
+
+
+
+    <item
+
+        android:top="-60dp">
+
+
+        <bitmap
+
+            android:gravity="center"
+            android:src="@drawable/slogan" />
+
+
+    </item>
+
+    <item
+        android:top="73dp"
+        android:left="0dp">
+        <bitmap android:src="@drawable/matte_dot"
+
+            android:gravity="center"/>
+
+    </item>
+
+    <item
+        android:bottom="145dp"
+        android:left="0dp">
+        <bitmap android:src="@drawable/sona_player_big"
+
+            android:gravity="bottom"/>
+
+    </item>
+
+
+
+
+    <item
+        android:bottom="120dp"
+        android:left="8dp"
+        >
+        <bitmap android:src="@drawable/verson"
+            android:gravity="bottom"/>
+
+
+    </item>
+
+
+    <item
+        android:bottom="50dp"
+        android:left="0dp"
+        >
+        <bitmap android:src="@drawable/brand"
+            android:gravity="bottom"/>
+
+
+    </item>
+
+
+
+
+</layer-list>

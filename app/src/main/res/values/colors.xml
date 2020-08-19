@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#018b8b</color>
+    <color name="colorPrimaryDark">#2b2b2b</color>
+    <color name="colorAccent">#BC0162</color>
+    <color name="cyan">#01FFF7</color>
+    <color name="darkCyan">#139595</color>
+    <color name="colorNavigation">#02dada</color>
+    <color name="visualColor">#829302c4</color>
+    <color name="searchcolor">#6cfdfdfd</color>
+    <color name="Purplecolor">#8800ff</color>
+    <color name="Pinkcolor">#F700FF</color>
+    <color name="Greencolor">#04ff00</color>
+    <color name="Yellowcolor">#FBFF00</color>
+    <color name="Orangecolor">#ff3c00</color>
+    <color name="Bluecolor">#002fff</color>
+    <color name="cyanMix">#00c292</color>
+    <color name="PurpleMix">#9b20ff</color>
+    <color name="LightBlue">#8DDAF8</color>
+
+
+    <!-- A transparent black -->
+    <color name="transparent_black">#AA000000</color>
+
+    <!-- selected tab text -->
+    <color name="selected_tabtext">#bb000000</color>
+
+    <!-- non selected tab text -->
+    <color name="unselected_tabtext">#77000000</color>
+    <color name="shuffle_grey">#ffdedede</color>
+    <color name="background_grey">#DEDEDE</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+
+    <!-- Black -->
+    <color name="black">#000000</color>
+
+    <!-- White -->
+    <color name="white">#FFFFFF</color>
+    <color name="BlueGrey">#17171F</color>
+
+    <color name="fastScrollHandleColor">#FFF</color>
+    <color name="fastScrollBarColor">#ffcecece</color>
+
+    <color name="knobProgressBlue">#0a27d6</color>
+    <color name="knobPointerIndigo">#848BB7</color>
+
+    <color name="eq_back">#1e1e1e</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="setting_head_grey">#212121</color>
+    <color name="setting_back_grey">#303030</color>
+    <color name="divider_grey">#464646</color>
+    <color name="tool_menu_popup">#00202B</color>
+    <color name="teal_option">#009688</color>
+    <color name="disable_popup_view">#004D68</color>
+
+    <color name="disable_edit_text">#004D68</color>
+    <color name="light_grey">#BDBCBC</color>
+    <color name="tab_selected_color">#002B3A</color>
+    <color name="ping_peach">#FF4081</color>
+
+    <color name="progress_start">#FF00DE</color>
+    <color name="progress_centre">#00F4FF</color>
+    <color name="progress_end">#01860A</color>
+
+</resources>

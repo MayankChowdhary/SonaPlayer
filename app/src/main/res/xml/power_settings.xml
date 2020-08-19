@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="keep_screen_on"
+        app:title="Keep Screen On"
+        app:summary="Always keep screen on in Sona Player"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="pref_power_saver"
+        app:title="Auto Stop When Battery Is Low"
+        app:summary="Automatically terminates player when battery is low"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+
+    <SeekBarPreference
+        app:key="power_seekbar"
+        app:summary="20%"
+        app:iconSpaceReserved="false"
+        app:title="Low Battery Level"
+        app:max="100"
+        app:min="10"
+        app:defaultValue="40"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="pref_auto_sleep"
+        app:title="Allow Sleep When Battery Is Low"
+        app:summary="It releases wake locks and disables auto play feature during screen off"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <SeekBarPreference
+        app:key="sleep_seekbar"
+        app:summary="20%"
+        app:iconSpaceReserved="false"
+        app:title="Sleep Battery Level"
+        app:max="100"
+        app:min="10"
+        app:defaultValue="40"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+
+</androidx.preference.PreferenceScreen>

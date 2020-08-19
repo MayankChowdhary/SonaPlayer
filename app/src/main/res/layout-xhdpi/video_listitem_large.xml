@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="3dp"
+    android:orientation="horizontal"
+    android:background="@drawable/mp_nowplaying_bg"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <FrameLayout
+        android:id="@+id/album_art_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/album_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="6dp"
+            android:src="@drawable/loading_art" />
+
+        <CheckBox
+            android:id="@+id/mark_box_vl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical|start"
+            android:background="@drawable/markbox_circle"
+            android:buttonTint="@color/white"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/list_info_wrapper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.0"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="1"
+                android:focusable="true"
+                android:singleLine="true"
+                android:fadingEdge="horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/list_title" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_margin="2dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:fadingEdge="horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:text="Description"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="@dimen/list_subtitle" />
+
+            <TextView
+                android:id="@+id/song_meta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:fadingEdge="horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:text="Song_mata"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="@dimen/list_meta" />
+
+
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/option_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/more_option" />
+
+</LinearLayout>

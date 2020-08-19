@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/volume_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eq_back">
+
+
+    <LinearLayout
+        android:id="@+id/volume_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/loud_wrapper"
+        app:layout_constraintEnd_toStartOf="@+id/loud_wrapper"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loud_wrapper">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/volume_knob"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:progress_radius="49"
+            app:progress_primary_stroke_width="4"
+            android:layout_weight="1"
+            android:background="@drawable/round_full"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_viewpager"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523"
+            app:main_circle_color="@android:color/transparent"
+            app:max="100"
+            app:min="0"
+            app:progress_primary_color="@color/knobProgressBlue"
+
+
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/volume_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="  VOLUME"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loud_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/equalizer_viewpager"
+        app:layout_constraintStart_toEndOf="@+id/volume_wrapper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/loud_knob"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:progress_radius="49"
+            android:layout_weight="1"
+            android:background="@drawable/round_full"
+            android:drawingCacheQuality="high"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_viewpager"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523"
+            app:main_circle_color="@android:color/transparent"
+            app:max="100"
+            app:min="0"
+            app:progress_primary_color="@color/knobProgressBlue"
+            app:progress_primary_stroke_width="4"
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/loud_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="  LOUDNESS"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <me.kaelaela.verticalviewpager.VerticalViewPager
+        android:id="@+id/equalizer_viewpager"
+        android:layout_width="0dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="8dp"
+        android:alwaysDrawnWithCache="true"
+        android:animationCache="true"
+        android:background="#006f6d6d"
+        android:drawingCacheQuality="high"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toEndOf="@+id/loud_wrapper"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

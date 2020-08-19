@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_audio_reject_entries">
+        <item>10 Seconds</item>
+        <item>30 Seconds</item>
+        <item>60 Seconds</item>
+        <item>120 Seconds</item>
+    </string-array>
+    <string-array name="pref_audio_reject_values">
+        <item>10000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+    </string-array>
+
+    <string-array name="pref_video_reject_entries">
+        <item>10 Seconds</item>
+        <item>30 Seconds</item>
+        <item>60 Seconds</item>
+        <item>120 Seconds</item>
+    </string-array>
+    <string-array name="pref_video_reject_values">
+        <item>10000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+    </string-array>
+    
+    <string-array name="animation_entries">
+        <item >Zoom</item>
+        <item >Fade</item>
+        <item >Windmill</item>
+        <item >Spin</item>
+        <item >Diagonal</item>
+        <item >Split</item>
+        <item >Shrink</item>
+        <item >Card</item>
+        <item >In and Out</item>
+        <item >Swipe Left</item>
+        <item >Swipe Right</item>
+        <item >Slide Left</item>
+        <item >Slide Right</item>
+        <item >Slide Down</item>
+        <item >Slide Up</item>
+        <item >Random</item>
+    </string-array>
+
+    <string-array name="animation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+</resources>

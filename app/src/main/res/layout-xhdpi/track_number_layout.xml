@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/track_goto_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/colorPrimaryDark"
+    android:padding="3dp">
+
+    <ImageButton
+        android:id="@+id/close_track_btn"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="top|end"
+        android:background="@color/colorPrimaryDark"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/track_num_parent"
+        android:layout_width="160dp"
+        android:layout_height="60dp">
+
+        <com.McDevelopers.sonaplayer.CustomTextInputEditText
+            android:id="@+id/track_num_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Play Track no."
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:maxLength="5"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</FrameLayout>

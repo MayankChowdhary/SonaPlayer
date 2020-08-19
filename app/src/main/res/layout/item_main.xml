@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:vumeter="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="3dp"
+    android:background="@drawable/mp_nowplaying_bg"
+    android:padding="3dp"
+    android:orientation="horizontal">
+    <FrameLayout
+        android:id="@+id/album_art_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/album_imageView"
+            android:layout_width="64.0dip"
+            android:layout_height="64.0dip"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loading_art" />
+
+        <io.gresse.hugo.vumeterlibrary.VuMeterView
+            android:id="@+id/vumeter"
+            android:layout_width="64.0dip"
+            android:layout_height="54.0dip"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            vumeter:vumeter_backgroundColor="@color/visualColor"
+            vumeter:vumeter_blockNumber="4"
+            vumeter:vumeter_blockSpacing="3dp"
+            vumeter:vumeter_speed="12"
+            vumeter:vumeter_startOff="false"
+            vumeter:vumeter_stopSize="5dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:focusable="true"
+            android:singleLine="true"
+            android:fadingEdge="horizontal"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/list_title" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginTop="2dp"
+            android:fadingEdge="horizontal"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text="Description"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="@dimen/list_meta" />
+
+    </LinearLayout>
+
+        <ImageButton
+            android:layout_gravity="center_vertical"
+            android:id="@+id/option_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/sort_button"
+            android:tint="@color/light_grey" />
+    </LinearLayout>

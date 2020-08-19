@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bass_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vol_back"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:baselineAligned="false"
+   android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/bass_knob_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/bassKnob"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_full"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:main_circle_color="@android:color/transparent"
+            app:max="10"
+            app:min="0"
+            app:progress_primary_color="@color/knobProgressBlue"
+            app:progress_primary_stroke_width="6"
+            app:progress_radius="86"
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/bass_label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="BASS BOOST"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/knob_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/virtual_knob_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/virtualKnob"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_full"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:main_circle_color="@android:color/transparent"
+            app:max="10"
+            app:min="0"
+            app:progress_primary_color="@color/knobProgressBlue"
+            app:progress_primary_stroke_width="6"
+            app:progress_radius="86"
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/virtual_label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="VIRTUALIZER"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/knob_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trable_knob_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/trableKnob"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_full"
+            android:foreground="@drawable/round_full_fore"
+            app:back_circle_color="@android:color/transparent"
+            app:indicator_color="@color/knobPointerIndigo"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label=""
+            app:label_color="@color/transparent"
+            app:main_circle_color="@android:color/transparent"
+            app:max="10"
+            app:min="0"
+            app:progress_primary_color="@color/knobProgressBlue"
+            app:progress_primary_stroke_width="6"
+            app:progress_radius="86"
+            app:progress_secondary_color="@android:color/transparent"
+            app:start_offset="45" />
+
+        <TextView
+            android:id="@+id/trable_label"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="TREBLE"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/knob_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

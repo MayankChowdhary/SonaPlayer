@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="crossfade_switch"
+        app:title="CrossFade"
+        app:iconSpaceReserved="false"
+        app:summary="Smooth Transition between songs"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="play_pause_fade"
+        app:iconSpaceReserved="false"
+        app:summary="Fading effect during play/pause"
+        app:title="Play/Pause Fade"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SeekBarPreference
+        app:key="crossfade_seekbar"
+        app:summary="15000ms"
+        app:iconSpaceReserved="false"
+        app:title="Crossfade Length"
+        app:max="100"
+        app:min="4"
+        app:defaultValue="60"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <SeekBarPreference
+        app:defaultValue="40"
+        app:min="10"
+        app:max="100"
+        app:key="manual_crossfade_seekbar"
+        app:summary="40ms"
+        app:iconSpaceReserved="false"
+        app:title="Manual Short Crossfade Length"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <SeekBarPreference
+        app:defaultValue="70"
+        app:min="10"
+        app:max="100"
+        app:key="fade_seekbar"
+        app:summary="700ms"
+        app:iconSpaceReserved="false"
+        app:title="Play/Pause Fade Length"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <Preference
+        app:key="reset_crossfade_pref"
+        app:title="Restore Defaults"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+</androidx.preference.PreferenceScreen>

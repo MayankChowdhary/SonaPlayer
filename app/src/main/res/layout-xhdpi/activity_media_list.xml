@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:recyclerviewfastscroller="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/media_list_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_bg"
+    android:orientation="vertical"
+    tools:context=".MediaListActivity.MediaListActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageButton
+            android:id="@+id/layout_style"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/list_large_icon"
+            android:layout_gravity="start" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/song_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/layout_style"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                android:visibility="visible"
+                app:closeIcon="@android:drawable/ic_menu_close_clear_cancel"
+                app:defaultQueryHint="Search All Media"
+                app:queryHint="Search All Media"
+                app:searchIcon="@android:drawable/ic_menu_search" />
+
+        <TextView
+            android:id="@+id/all_media_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Media"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+<FrameLayout
+    android:id="@+id/recycler_view_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:clipToPadding="false"
+        android:paddingBottom="150dp"
+        android:layout_marginEnd="12dp"
+        android:layout_gravity="start"/>
+
+    <com.McDevelopers.sonaplayer.ColorGroupSectionTitleIndicator
+        android:id="@+id/fast_scroller_section_title_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:visibility="visible"
+        android:layout_gravity="end"
+        android:layout_marginEnd="24dp"
+        recyclerviewfastscroller:rfs_backgroundColor="@android:color/holo_blue_bright"
+        recyclerviewfastscroller:rfs_textColor="@android:color/black" />
+
+    <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="end"
+        recyclerviewfastscroller:rfs_barColor="@color/fastScrollBarColor"
+        recyclerviewfastscroller:rfs_handleBackground="@drawable/fast_scroller_handle_rounded" />
+
+    <ViewStub
+        android:id="@+id/viewStub_no_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout="@layout/no_music_layouts" />
+
+</FrameLayout>
+
+</LinearLayout>

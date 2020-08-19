@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="auto_play"
+        app:title="Auto Play on Headset connect"
+        app:iconSpaceReserved="false"
+        app:summary="Starts Player if not running"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="auto_resume"
+        app:title="Auto Resume On Headset Connect"
+        app:iconSpaceReserved="false"
+        app:summary="Resumes playback if player is paused"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="wake_lock"
+        app:title="AutoPlay WakeLock"
+        app:iconSpaceReserved="false"
+        app:summary="Enable this to use AutoPlay feature during screen off"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="player_wake_lock"
+        app:title="Player WakeLock"
+        app:iconSpaceReserved="false"
+        app:summary="Enable this if player unable to Auto resume playback during screen off"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <SwitchPreferenceCompat
+        app:defaultValue="false"
+        app:key="noti_switch"
+        app:title="AutoPlay Notification"
+        app:iconSpaceReserved="false"
+        app:summary="Show persistent notification for Auto Play service"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+</androidx.preference.PreferenceScreen>

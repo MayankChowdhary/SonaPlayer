@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/album_catogary_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mp_nowplaying_bg">
+
+    <ImageView
+        android:id="@+id/album_imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loading_art" />
+
+    <TextView
+        android:id="@+id/tv_album_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/album_imageView"
+        android:layout_toStartOf="@+id/iv_arrow_expand"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:fadingEdge="horizontal"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="AlbumNameHere"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/list_title"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_arrow_expand"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/arrow_down_float" />
+
+    <TextView
+        android:id="@+id/song_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_album_category"
+        android:layout_below="@+id/tv_album_category"
+        android:text="Song Count Here"
+        android:fadingEdge="horizontal"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="@dimen/list_subtitle" />
+
+</RelativeLayout>

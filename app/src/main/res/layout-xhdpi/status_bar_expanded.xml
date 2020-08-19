@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationbg"
+    android:layout_width="match_parent"
+    android:layout_height="128.0dip"
+    android:background="@color/BlueGrey">
+
+    <ImageView
+        android:id="@+id/status_bar_album_art"
+        android:layout_width="@dimen/notification_expanded_height"
+        android:layout_height="@dimen/notification_expanded_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/album_art"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diskk" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/status_bar_album_art"
+        android:dividerPadding="12.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <ImageButton
+            android:id="@+id/status_bar_prev"
+            android:layout_width="0.0dip"
+            android:layout_height="29.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/previous"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mprev" />
+
+        <ImageButton
+            android:id="@+id/status_bar_rev"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/rewind_button"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rew" />
+
+        <ImageButton
+            android:id="@+id/status_bar_play"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/play_controls_notification"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/play"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mplayx" />
+
+        <ImageButton
+            android:id="@+id/status_bar_ff"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/fast_forward"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ff" />
+
+        <ImageButton
+            android:id="@+id/status_bar_next"
+            android:layout_width="0.0dip"
+            android:layout_height="29.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/next"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mnexts" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/status_bar_collapse"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/stop_button"
+        android:padding="1.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/xclear" />
+
+    <LinearLayout
+        android:id="@+id/textarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/status_bar_album_art"
+        android:layout_toStartOf="@id/status_bar_collapse"
+        android:orientation="vertical"
+        android:paddingTop="0.0dip">
+
+        <TextView
+            android:id="@+id/status_bar_track_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fadingEdge="horizontal"
+            android:focusable="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/noty_title" />
+
+        <TextView
+            android:id="@+id/status_bar_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/noty_subtitle" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/status_bar_album_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textarea"
+        android:layout_below="@+id/textarea"
+        android:layout_gravity="start"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/status_bar_album_art"
+        android:layout_toStartOf="@id/track_num"
+        android:ellipsize="end"
+        android:fadingEdge="horizontal"
+        android:singleLine="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/noty_meta" />
+
+    <TextView
+        android:id="@+id/track_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textarea"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="3dp"
+        android:background="@color/transparent"
+        android:ellipsize="end"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:text="@string/Song_track_number"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/noty_track" />
+
+
+    <TextView
+        android:id="@+id/time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons"
+        android:layout_gravity="start"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@id/status_bar_album_art"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/_20_00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/noty_seek_time" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@id/buttons"
+            android:layout_toStartOf="@id/end_time"
+            android:layout_toEndOf="@id/time_start"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:max="100"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/noty_progress" />
+
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/_05_00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/noty_seek_time" />
+
+
+</RelativeLayout>

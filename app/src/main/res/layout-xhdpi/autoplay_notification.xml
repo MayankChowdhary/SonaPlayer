@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/BlueGrey"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/autoplay_albumart"
+        android:layout_width="@dimen/autoplay_icon_side"
+        android:layout_height="@dimen/autoplay_icon_side"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/autoplay_albumart" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:gravity="start|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/autoplay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sona Player Auto Play"
+            android:textColor="@color/white"
+            android:textSize="@dimen/autoplay_titletext" />
+
+        <TextView
+            android:id="@+id/autoplay_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Connect headset to play"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/autoplay_subtitletext" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/autoplay_button"
+        android:layout_width="@dimen/autoplay_button_width"
+        android:layout_height="@dimen/autoplay_button_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="0"
+        android:background="@drawable/rounded_buttons"
+        android:text="PLAY"
+        android:textColor="@color/black"
+        android:textSize="@dimen/autoplay_button_text" />
+</LinearLayout>

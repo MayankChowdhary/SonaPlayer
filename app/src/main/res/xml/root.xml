@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:title="Scan Settings"
+        app:summary="Select media folders and filters"
+        app:icon="@drawable/scan_setting"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:fragment="com.McDevelopers.sonaplayer.PreferenceActivity.PreferenceActivity$ScanPreferencesFragment"/>
+    <Preference
+        app:title="CrossFade Settings"
+        app:summary="CrossFade and PlayPause Fading"
+        app:icon="@drawable/crossfade"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:fragment="com.McDevelopers.sonaplayer.PreferenceActivity.PreferenceActivity$CrossfadePreferencesFragment"/>
+    <Preference
+        app:title="AutoPlay Settings"
+        app:summary="Select different AutoPlay options"
+        app:icon="@drawable/autoplayicon"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:fragment="com.McDevelopers.sonaplayer.PreferenceActivity.PreferenceActivity$AutoPlayPreferencesFragment"/>
+    <Preference
+        app:title="Audio Focus Settings"
+        app:summary="Select different AudioFocus options"
+        app:icon="@drawable/audiofocus"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:fragment="com.McDevelopers.sonaplayer.PreferenceActivity.PreferenceActivity$AudioFocusPreferencesFragment"/>
+
+    <Preference
+        app:title="Power Saver Settings"
+        app:summary="Some power saving options"
+        app:icon="@drawable/powericon"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:fragment="com.McDevelopers.sonaplayer.PreferenceActivity.PreferenceActivity$PowerPreferencesFragment"/>
+    <Preference
+        app:title="Misc. Setttings"
+        app:summary="Some advanced Settings"
+        app:icon="@drawable/misc_setting"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"
+        app:fragment="com.McDevelopers.sonaplayer.PreferenceActivity.PreferenceActivity$MiscPreferencesFragment"/>
+
+</androidx.preference.PreferenceScreen>

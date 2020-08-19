@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <root-path
+        name="app"
+        path="/"/>
+    <files-path name="sona_music" path="media_share/"/>
+    <cache-path name="sona_cache" path="/"/>
+</paths>

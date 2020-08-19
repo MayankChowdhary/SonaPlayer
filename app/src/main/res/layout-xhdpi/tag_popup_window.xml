@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tag_window_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_back_color"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tag_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text="Video Tagging is not supported!"
+        android:textAlignment="center"
+        android:textColor="@color/disable_popup_view"
+        android:textSize="16dp"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/info_tag_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:fadeScrollbars="false"
+        android:layout_below="@id/tag_note">
+
+        <LinearLayout
+            android:id="@+id/tag_info_wrapper"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/tag_title_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tag_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Title: "
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"/>
+
+        <com.McDevelopers.sonaplayer.CustomEditText
+            android:id="@+id/tag_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_selector"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:imeOptions="actionNext"
+            android:focusableInTouchMode="true"
+            android:selectAllOnFocus="true"
+            android:maxLength="100"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="Media Title Name Here"
+            android:textAlignment="textStart"
+            android:textColor="@color/light_grey"
+            android:textSize="18dp"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="insideInset"
+            android:fadeScrollbars="false"
+            android:overScrollMode="always"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_album_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tag_title_parent">
+
+            <TextView
+                android:id="@+id/tag_album_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Album: "
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="18dp"/>
+
+            <com.McDevelopers.sonaplayer.CustomEditText
+                android:id="@+id/tag_album_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_selector"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:focusableInTouchMode="true"
+                android:selectAllOnFocus="true"
+                android:maxLength="100"
+                android:paddingBottom="8dp"
+                android:paddingTop="4dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text="Media Album Name Here"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_grey"
+                android:textSize="18dp"
+                android:scrollbars="horizontal"
+                android:scrollbarSize="3dp"
+                android:scrollbarStyle="insideInset"
+                android:fadeScrollbars="false"
+                android:overScrollMode="always"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_artist_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@id/tag_album_parent">
+
+        <TextView
+            android:id="@+id/tag_artist_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Artist: "
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"/>
+
+        <com.McDevelopers.sonaplayer.CustomEditText
+            android:id="@+id/tag_artist_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_selector"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:imeOptions="actionNext"
+            android:focusableInTouchMode="true"
+            android:selectAllOnFocus="true"
+            android:maxLength="100"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="Media Artist Name Here"
+            android:textAlignment="textStart"
+            android:textColor="@color/light_grey"
+            android:textSize="18dp"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="insideInset"
+            android:fadeScrollbars="false"
+            android:overScrollMode="always"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tag_composer_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@id/tag_artist_parent">
+
+        <TextView
+            android:id="@+id/tag_composer_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Composer: "
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"/>
+
+        <com.McDevelopers.sonaplayer.CustomEditText
+            android:id="@+id/tag_composer_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_selector"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:imeOptions="actionNext"
+            android:focusableInTouchMode="true"
+            android:selectAllOnFocus="true"
+            android:maxLength="100"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="Media Composer Name Here"
+            android:textAlignment="textStart"
+            android:textColor="@color/light_grey"
+            android:textSize="18dp"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="insideInset"
+            android:fadeScrollbars="false"
+            android:overScrollMode="always"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tag_composer_parent">
+    <LinearLayout
+        android:id="@+id/tag_year_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tag_year_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year: "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp"/>
+
+        <com.McDevelopers.sonaplayer.CustomEditText
+            android:id="@+id/tag_year_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_selector"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:imeOptions="actionNext"
+            android:focusableInTouchMode="true"
+            android:selectAllOnFocus="true"
+            android:maxLength="4"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="2015"
+            android:textAlignment="textStart"
+            android:textColor="@color/light_grey"
+            android:textSize="18dp"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="insideInset"
+            android:fadeScrollbars="false"
+            android:overScrollMode="always"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_genre_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/tag_genre_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genre: "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/tag_genre_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/tag_genre_edittext"
+                android:layout_alignParentStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_selector"
+                android:cursorVisible="true"
+                android:fadeScrollbars="false"
+                android:focusable="true"
+                android:imeOptions="actionDone"
+                android:focusableInTouchMode="true"
+                android:inputType="text"
+                android:maxLength="10"
+                android:overScrollMode="always"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp"
+                android:scrollbarSize="3dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="horizontal"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="Blues"
+                android:textAlignment="textStart"
+                android:textColor="@color/light_grey"
+                android:textSize="18dp" />
+            <ImageButton
+                android:id="@+id/tag_genre_dropdown"
+                android:layout_alignEnd="@id/tag_genre_edittext"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:background="@color/transparent"
+                android:src="@drawable/genre_drop_down" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+            <TextView
+                android:id="@+id/tag_album_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Album Art:"
+                android:textSize="18dp"
+                android:textColor="@android:color/holo_blue_light"/>
+
+            <LinearLayout
+                android:id="@+id/info_album_art_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/tag_album_art"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main_art" />
+
+                <Button
+                    android:id="@+id/clear_albumart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:text="Remove"
+                    android:drawableTop="@drawable/delete_gredient"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/choose_albumart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/gallery"
+                    android:text="Choose"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/tag_save_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/info_tag_scrollview">
+
+        <Button
+            android:id="@+id/save_tag_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:text="Save"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="@dimen/sleep_layout_button" />
+        <Button
+            android:id="@+id/close_tag_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:text="Close"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="@dimen/sleep_layout_button" />
+
+    </LinearLayout>
+
+    <ImageButton
+       android:id="@+id/tag_help_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:background="@color/transparent"
+        android:src="@drawable/tag_help"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/info_tag_scrollview"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

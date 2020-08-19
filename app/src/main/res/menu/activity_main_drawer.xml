@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/all_songs"
+            android:icon="@drawable/matte_all_songs"
+            android:title="All Media" />
+        <item
+            android:id="@+id/nav_albums"
+            android:icon="@drawable/matte_albumz"
+            android:title="Albums" />
+        <item
+            android:id="@+id/nav_artists"
+            android:icon="@drawable/matte_artists"
+            android:title="Artists" />
+        <item
+            android:id="@+id/nav_folders"
+            android:icon="@drawable/matte_folders"
+            android:title="Folders" />
+        <item
+            android:id="@+id/nav_queue"
+            android:icon="@drawable/matte_queue"
+            android:title="Queue" />
+        <item
+            android:id="@+id/nav_recent"
+            android:icon="@drawable/matte_recently_added"
+            android:title="Recently Added" />
+
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/matte_videos"
+            android:title="Videos" />
+    </group>
+
+    <item android:title="Communicate"
+        android:id="@+id/nav_tools">
+    <menu>
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/matte_help"
+            android:title="Help" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/matte_send"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/matte_info"
+            android:title="About" />
+    </menu>
+    </item>
+
+
+</menu>

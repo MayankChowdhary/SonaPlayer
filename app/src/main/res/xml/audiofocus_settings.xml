@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="pref_focus_p"
+        app:title="Resume After Permanent Audio Focus Gain"
+        app:summary="Resume playback after finishing facebook videos or other media player"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="pref_focus_t"
+        app:title="Pause on Transient Audio Focus Loss"
+        app:summary="Temporary pause during Instagram videos or phone Calls"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="pref_can_duck"
+        app:title="Duck Volume"
+        app:summary="Lowering the player's volume during notifications"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"
+        app:allowDividerBelow="true"/>
+
+
+</androidx.preference.PreferenceScreen>

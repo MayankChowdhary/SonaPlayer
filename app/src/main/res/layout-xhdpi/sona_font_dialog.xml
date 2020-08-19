@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sona_font_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tool_menu_popup">
+
+
+    <TextView
+        android:id="@+id/font_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:singleLine="true"
+        android:text="Sona Font Chooser"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end"
+        app:layout_constraintBottom_toTopOf="@+id/cancelButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/font_heading">
+
+        <RadioGroup
+            android:id="@+id/font_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/fontRadio0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="System"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/cyanMix"
+                android:text="Font1"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Font1"
+                android:buttonTint="@color/cyanMix"
+                android:textColor="@color/cyanMix"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fontRadio11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/Yellowcolor"
+                android:text="Font1"
+                android:textColor="@color/Yellowcolor"
+                android:textSize="20dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chooseButton"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/chooseButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:text="Choose"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
