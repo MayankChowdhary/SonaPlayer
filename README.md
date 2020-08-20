@@ -1,3 +1,3 @@
 # SonaPlayer
 
-<img src="screenShots/newwelaxasda.png">
+<img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Scjjrekwpqlsenshot1.png">
