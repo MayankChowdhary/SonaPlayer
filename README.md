@@ -11,7 +11,7 @@
 </tr>
   
   <tr>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshkididot1.png" width="400" height="225">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshkididot1.png" width="200" height="355">
 </td>
     <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshmjinomkt1.png" width="200" height="355">
 </td>
