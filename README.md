@@ -16,11 +16,11 @@
   <tr>
     <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshkididot1.png" width="200" height="315">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshmjinomkt1.png" width="200" height="315">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshmjinomkt1.png" width="200" height="310">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshot1kjnkh.png" width="200" height="315">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshot1kjnkh.png" width="200" height="310">
 </td>
-  <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%206P-Screenshot1.png" width="200" height="315">
+  <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%206P-Screenshot1.png" width="200" height="310">
 </td>
 </tr>
 </table>
