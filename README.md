@@ -4,9 +4,9 @@
   <tr>
     <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/newwelaxasda.png" width="400" height="225">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-dddScreejjhgzjnklmnshot1.png" width="200" height="355">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-dddScreejjhgzjnklmnshot1.png" width="200" height="320">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Scjjrekwpqlsenshot1.png" width="200" height="355">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Scjjrekwpqlsenshot1.png" width="200" height="330">
 </td>
 </tr>
 </table>
