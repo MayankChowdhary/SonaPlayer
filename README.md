@@ -20,5 +20,7 @@
 </td>
     <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshot1kjnkh.png" width="200" height="355">
 </td>
+  <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%206P-Screenshot1.png" width="200" height="355">
+</td>
 </tr>
 </table>
