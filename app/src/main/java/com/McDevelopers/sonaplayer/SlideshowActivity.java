@@ -67,7 +67,7 @@ public class SlideshowActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slideshow);
-        getWindow().setDecorFitsSystemWindows(false);
+        getWindow().getDecorView().setSystemUiVisibility(UI_OPTIONS);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
 
