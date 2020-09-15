@@ -1,10 +1,4 @@
 # SonaPlayer
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    </head>
-  <body>
-    <br>
 This is very powerful Android Media Player App. It can play Audio, Video  and photo slideshows. Can play videos in background also. It also supports Audio tagging, Visualizers, Multiple Fonts, Album Art On the Fly, Equalizers, Crossfade, Sleep Mode, Colorized Notifications. 
 
 <table style="width:100%">
@@ -31,5 +25,3 @@ This is very powerful Android Media Player App. It can play Audio, Video  and ph
 </td>
 </tr>
 </table>
-</body>
-</html>
