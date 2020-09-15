@@ -3,11 +3,11 @@ This is very powerful Android Media Player App. It can play Audio, Video  and ph
 
 <table style="width:100%">
   <tr>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/newwelaxasda.png" width="400" height="215">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/newwelaxasda.png" width="400" height="220">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-dddScreejjhgzjnklmnshot1.png" width="200" height="315">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-dddScreejjhgzjnklmnshot1.png" width="200" height="320">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Scjjrekwpqlsenshot1.png" width="200" height="315">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Scjjrekwpqlsenshot1.png" width="200" height="320">
 </td>
 </tr>
 </table>
@@ -15,13 +15,13 @@ This is very powerful Android Media Player App. It can play Audio, Video  and ph
 <table style="width:100%">
   
   <tr>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshkididot1.png" width="200" height="315">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshkididot1.png" width="200" height="320">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshmjinomkt1.png" width="200" height="310">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshmjinomkt1.png" width="200" height="320">
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshot1kjnkh.png" width="200" height="310">
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screenshot1kjnkh.png" width="200" height="320">
 </td>
-  <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%206P-Screenshot1.png" width="200" height="310">
+  <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%206P-Screenshot1.png" width="200" height="320">
 </td>
 </tr>
 </table>
