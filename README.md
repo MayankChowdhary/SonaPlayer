@@ -25,3 +25,17 @@ This is very powerful Android Media Player App. It can play Audio, Video  and ph
 </td>
 </tr>
 </table>
+
+<table style="width:100%">
+  
+  <tr>
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%206P-Screensaahot1.png" >
+</td>
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Screekjinshot1.png" >
+</td>
+    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Scrjkhygeenshot1.png" >
+</td>
+  <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%206P-Screenshokhugpt1.png" >
+</td>
+</tr>
+</table>
