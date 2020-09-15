@@ -465,7 +465,7 @@ public class SonaHeartService extends MediaBrowserServiceCompat implements Music
 
         @Override
         public boolean onMediaButtonEvent(final Intent mediaButtonIntent) {
-            Log.d("MediaButtonReciever", "onMediaButtonEvent:Recieved ");
+            Log.d("MediaButtonReciever", "onMediaButtonEvent: "+((KeyEvent)mediaButtonIntent.getParcelableExtra(Intent.EXTRA_KEY_EVENT)).getKeyCode());
             if (Intent.ACTION_MEDIA_BUTTON.equals(mediaButtonIntent.getAction())) {
                 KeyEvent event = mediaButtonIntent.getParcelableExtra(Intent.EXTRA_KEY_EVENT);
 
@@ -567,7 +567,7 @@ public class SonaHeartService extends MediaBrowserServiceCompat implements Music
 
                     }
 
-                    if (event.getKeyCode() == KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PLAY && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PAUSE) {
+                    if (event.getKeyCode() == KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PLAY && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PAUSE && action == KeyEvent.ACTION_DOWN) {
                         if(mPlayback.isPlaying()){
                             if(isHeadsetOn(getApplicationContext())){
                                 earVolLevel=mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -580,6 +580,8 @@ public class SonaHeartService extends MediaBrowserServiceCompat implements Music
                                 editor.putInt("volLevel", volLevel);
                                 editor.commit();
                             }
+
+                            mSession.getController().getTransportControls().pause();
 
                         }else {
 
@@ -595,8 +597,11 @@ public class SonaHeartService extends MediaBrowserServiceCompat implements Music
                                 mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, volLevel, 0);
                             }
 
+                            mSession.getController().getTransportControls().play();
+
                         }
-                        super.onMediaButtonEvent(mediaButtonIntent);
+                        Log.d("MediaPlayPauseInvoked", "onMediaButtonEvent:PlayPauseInvoked! ");
+                        //super.onMediaButtonEvent(mediaButtonIntent);
                     }
 
                     if (action == KeyEvent.ACTION_DOWN && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_NEXT && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PREVIOUS && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_FAST_FORWARD && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_REWIND && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PLAY && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_PAUSE && event.getKeyCode() != KeyEvent.KEYCODE_MEDIA_STOP) {

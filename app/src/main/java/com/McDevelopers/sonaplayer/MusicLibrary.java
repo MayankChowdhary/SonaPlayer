@@ -573,6 +573,8 @@ public class MusicLibrary{
              builder.putString("FILENAME", (Objects.requireNonNull(musicFileName.get(mediaId))).substring((Objects.requireNonNull(musicFileName.get(mediaId))).lastIndexOf("/") + 1));
 
                  builder.putBitmap(MediaMetadataCompat.METADATA_KEY_ALBUM_ART, null);
+                 builder.putBitmap(MediaMetadataCompat.METADATA_KEY_ART, null);
+
                  builder.putString("SAMPLERATE", "____");
                  builder.putString("BITRATE", "____");
                  builder.putString("SONGFORMAT","____");
@@ -648,6 +650,7 @@ public class MusicLibrary{
                     MediaMetadataCompat.METADATA_KEY_DURATION,
                     Objects.requireNonNull(metadataWithoutBitmap).getLong(MediaMetadataCompat.METADATA_KEY_DURATION));
             builder.putBitmap(MediaMetadataCompat.METADATA_KEY_ALBUM_ART, albumArt);
+            builder.putBitmap(MediaMetadataCompat.METADATA_KEY_ART, albumArt);
             builder.putString("SAMPLERATE",getSampleRate());
             builder.putString("BITRATE",getBitRate(isVideoFileX(musicFileName.get(mediaId))));
             builder.putString("SONGFORMAT",getSongFormat(Objects.requireNonNull(musicFileName.get(mediaId))));
