@@ -1,5 +1,5 @@
 # SonaPlayer
-This is very powerful Android Media Player App. It can play Audio, Video  and photo slideshow
+This is very powerful Android Media Player App. It can play Audio, Video  and photo slideshow in a single screen. 
 . Can play videos in background also. It also supports Audio tagging, Visualizers, Multiple Fonts, Album Art On the Fly, Equalizers, Crossfade, Sleep Mode, Colorized Notifications. 
 <br>
 Click on  below link to download App apk file:  
