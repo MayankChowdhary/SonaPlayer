@@ -3121,10 +3121,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_about: {
 
                 Snackbar snack = Snackbar.make(findViewById(R.id.snackbarLayout),
-                        "Currently About Unavailable", Snackbar.LENGTH_SHORT);
+                        "Currently Unavailable", Snackbar.LENGTH_SHORT);
                 SnackbarHelper.configSnackbar(getApplicationContext(), snack);
                 snack.show();
-
                 break;
             }
             case R.id.nav_videos:
@@ -5074,13 +5073,28 @@ try {
 
 
 
-        if (density ==DisplayMetrics.DENSITY_XHIGH) {
+        if (density <=DisplayMetrics.DENSITY_XHIGH) {
 
             bassKnob.setProgressRadius(95);
             virtualKnob.setProgressRadius(95);
             trableKnob.setProgressRadius(95);
 
-        } else if(density ==DisplayMetrics.DENSITY_XXHIGH) {
+        } else if(density <=DisplayMetrics.DENSITY_420){
+            bassKnob.setProgressRadius(123);
+            bassKnob.setProgressPrimaryStrokeWidth(10);
+            virtualKnob.setProgressRadius(123);
+            virtualKnob.setProgressPrimaryStrokeWidth(10);
+            trableKnob.setProgressRadius(123);
+            trableKnob.setProgressPrimaryStrokeWidth(10);
+
+        }else if(density <=DisplayMetrics.DENSITY_440){
+            bassKnob.setProgressRadius(130);
+            bassKnob.setProgressPrimaryStrokeWidth(12);
+            virtualKnob.setProgressRadius(130);
+            virtualKnob.setProgressPrimaryStrokeWidth(12);
+            trableKnob.setProgressRadius(130);
+            trableKnob.setProgressPrimaryStrokeWidth(12);
+        }else if(density <=DisplayMetrics.DENSITY_XXHIGH) {
 
             bassKnob.setProgressRadius(141);
             bassKnob.setProgressPrimaryStrokeWidth(10);
@@ -5089,23 +5103,16 @@ try {
             trableKnob.setProgressRadius(141);
             trableKnob.setProgressPrimaryStrokeWidth(10);
 
-        }else if(density ==DisplayMetrics.DENSITY_420){
-            bassKnob.setProgressRadius(123);
-            bassKnob.setProgressPrimaryStrokeWidth(10);
-            virtualKnob.setProgressRadius(123);
-            virtualKnob.setProgressPrimaryStrokeWidth(10);
-            trableKnob.setProgressRadius(123);
-            trableKnob.setProgressPrimaryStrokeWidth(10);
         }
 
-        else if(density ==DisplayMetrics.DENSITY_560){
+        else if(density <=DisplayMetrics.DENSITY_560){
             bassKnob.setProgressRadius(164);
             bassKnob.setProgressPrimaryStrokeWidth(12);
             virtualKnob.setProgressRadius(164);
             virtualKnob.setProgressPrimaryStrokeWidth(12);
             trableKnob.setProgressRadius(164);
             trableKnob.setProgressPrimaryStrokeWidth(12);
-        } else if(density ==DisplayMetrics.DENSITY_XXXHIGH) {
+        } else if(density <=DisplayMetrics.DENSITY_XXXHIGH) {
             bassKnob.setProgressRadius(195);
             bassKnob.setProgressPrimaryStrokeWidth(13);
             virtualKnob.setProgressRadius(195);
@@ -5232,14 +5239,27 @@ try {
         loudKnob.setProgress((currentState.getInt("LoudValue",50))/10);
 
 
-        if (density ==DisplayMetrics.DENSITY_XHIGH) {
+        if (density <=DisplayMetrics.DENSITY_XHIGH) {
 
             volKnob.setProgressRadius(95);
             loudKnob.setProgressRadius(95);
 
            // Toast.makeText(getApplicationContext(),"MyScreen Density is xhdpi: "+density,Toast.LENGTH_LONG).show();
 
-        } else if(density ==DisplayMetrics.DENSITY_XXHIGH) {
+        } else if(density <=DisplayMetrics.DENSITY_420){
+            volKnob.setProgressRadius(123);
+            volKnob.setProgressPrimaryStrokeWidth(10);
+            loudKnob.setProgressRadius(123);
+            loudKnob.setProgressPrimaryStrokeWidth(10);
+
+            // Toast.makeText(getApplicationContext(),"MyScreen Density is : "+density,Toast.LENGTH_LONG).show();
+        }else if(density <=DisplayMetrics.DENSITY_440) {
+            volKnob.setProgressRadius(130);
+            volKnob.setProgressPrimaryStrokeWidth(12);
+            loudKnob.setProgressRadius(130);
+            loudKnob.setProgressPrimaryStrokeWidth(12);
+
+        }else if(density <=DisplayMetrics.DENSITY_XXHIGH) {
 
             volKnob.setProgressRadius(141);
             volKnob.setProgressPrimaryStrokeWidth(10);
@@ -5247,29 +5267,20 @@ try {
             loudKnob.setProgressPrimaryStrokeWidth(10);
 
            // Toast.makeText(getApplicationContext(),"MyScreen Density is xxhdpi: "+density,Toast.LENGTH_LONG).show();
-        }else if(density ==DisplayMetrics.DENSITY_420){
-            volKnob.setProgressRadius(123);
-            volKnob.setProgressPrimaryStrokeWidth(10);
-            loudKnob.setProgressRadius(123);
-            loudKnob.setProgressPrimaryStrokeWidth(10);
-
-           // Toast.makeText(getApplicationContext(),"MyScreen Density is : "+density,Toast.LENGTH_LONG).show();
-        }
-
-        else if(density ==DisplayMetrics.DENSITY_560){
+        } else if(density <=DisplayMetrics.DENSITY_560){
             volKnob.setProgressRadius(164);
             volKnob.setProgressPrimaryStrokeWidth(12);
             loudKnob.setProgressRadius(164);
             loudKnob.setProgressPrimaryStrokeWidth(12);
 
           //  Toast.makeText(getApplicationContext(),"MyScreen Density is: "+density,Toast.LENGTH_LONG).show();
-        } else if(density ==DisplayMetrics.DENSITY_XXXHIGH) {
+        } else if(density <=DisplayMetrics.DENSITY_XXXHIGH) {
             volKnob.setProgressRadius(195);
             volKnob.setProgressPrimaryStrokeWidth(13);
             loudKnob.setProgressRadius(195);
             loudKnob.setProgressPrimaryStrokeWidth(13);
 
-        } else {
+        }  else {
 
 
             Toast.makeText(getApplicationContext(),"Thrown Screen Density is: "+density,Toast.LENGTH_LONG).show();
@@ -5546,13 +5557,27 @@ try {
         balanceKnob.setProgress(channelprogress);
         tempoKnob.setProgress(tempoProgress);
 
-        if (density ==DisplayMetrics.DENSITY_XHIGH) {
+        if (density <=DisplayMetrics.DENSITY_XHIGH) {
             balanceKnob.setProgressRadius(95);
             tempoKnob.setProgressRadius(95);
 
             // Toast.makeText(getApplicationContext(),"MyScreen Density is xhdpi: "+density,Toast.LENGTH_LONG).show();
 
-        } else if(density ==DisplayMetrics.DENSITY_XXHIGH) {
+        }else if(density <=DisplayMetrics.DENSITY_420){
+            balanceKnob.setProgressRadius(123);
+            balanceKnob.setProgressPrimaryStrokeWidth(10);
+            tempoKnob.setProgressRadius(123);
+            tempoKnob.setProgressPrimaryStrokeWidth(10);
+
+            // Toast.makeText(getApplicationContext(),"MyScreen Density is : "+density,Toast.LENGTH_LONG).show();
+        }else if(density <=DisplayMetrics.DENSITY_440){
+            balanceKnob.setProgressRadius(130);
+            balanceKnob.setProgressPrimaryStrokeWidth(12);
+            tempoKnob.setProgressRadius(130);
+            tempoKnob.setProgressPrimaryStrokeWidth(12);
+
+            // Toast.makeText(getApplicationContext(),"MyScreen Density is : "+density,Toast.LENGTH_LONG).show();
+        } else if(density <=DisplayMetrics.DENSITY_XXHIGH) {
 
             balanceKnob.setProgressRadius(141);
             balanceKnob.setProgressPrimaryStrokeWidth(10);
@@ -5560,23 +5585,16 @@ try {
             tempoKnob.setProgressPrimaryStrokeWidth(10);
 
             // Toast.makeText(getApplicationContext(),"MyScreen Density is xxhdpi: "+density,Toast.LENGTH_LONG).show();
-        }else if(density ==DisplayMetrics.DENSITY_420){
-            balanceKnob.setProgressRadius(123);
-            balanceKnob.setProgressPrimaryStrokeWidth(10);
-            tempoKnob.setProgressRadius(123);
-            tempoKnob.setProgressPrimaryStrokeWidth(10);
-
-            // Toast.makeText(getApplicationContext(),"MyScreen Density is : "+density,Toast.LENGTH_LONG).show();
         }
 
-        else if(density ==DisplayMetrics.DENSITY_560){
+        else if(density <=DisplayMetrics.DENSITY_560){
             balanceKnob.setProgressRadius(164);
             balanceKnob.setProgressPrimaryStrokeWidth(12);
             tempoKnob.setProgressRadius(164);
             tempoKnob.setProgressPrimaryStrokeWidth(12);
 
             //  Toast.makeText(getApplicationContext(),"MyScreen Density is: "+density,Toast.LENGTH_LONG).show();
-        }else if(density ==DisplayMetrics.DENSITY_XXXHIGH) {
+        }else if(density <=DisplayMetrics.DENSITY_XXXHIGH) {
             balanceKnob.setProgressRadius(195);
             balanceKnob.setProgressPrimaryStrokeWidth(13);
             tempoKnob.setProgressRadius(195);
@@ -6305,13 +6323,17 @@ try {
 
             }
         });
-
+        currentState = getSharedPreferences("com.McDevelopers.sonaplayer", Context.MODE_PRIVATE);
+        int brightmax =currentState.getInt("maxbright",-1);
+        if(brightmax!=-1){
+            brightnessSeekbar.setMax(brightmax);
+            Log.d("MaxSavedBrightness", "initVideoView: MaxBrightnessSet: "+brightmax);
+        }
 
         mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
         volumeSeekbar.setMax(mAudioManager != null ? mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC) : 15);
         volumeSeekbar.setProgress(mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC));
         brightnessSeekbar.setProgress(Settings.System.getInt(getContentResolver(),Settings.System.SCREEN_BRIGHTNESS,0));
-
         volumeSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
@@ -6354,31 +6376,40 @@ try {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-                if(fromUser && isActivityRunning) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        if (Settings.System.canWrite(MainActivity.this)) {
+                try {
+                    if(fromUser && isActivityRunning) {
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            if (Settings.System.canWrite(MainActivity.this)) {
+                                Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE, 0);
+                                Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, progress);
+                                brightnessCurrent = progress;
+                                Log.d("VideoBrightness", "onProgressChanged: "+progress);
+                                SharedPreferences.Editor editor = currentState.edit();
+                                editor.putInt("brightness", brightnessCurrent);
+                                editor.commit();
+                            } else {
+
+                                Snackbar snack = Snackbar.make(findViewById(R.id.snackbarLayout),
+                                        "Grant Permission", Snackbar.LENGTH_SHORT);
+                                SnackbarHelper.configSnackbar(getApplicationContext(), snack);
+                                snack.show();
+                            }
+                        } else {
                             Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE, 0);
                             Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, progress);
                             brightnessCurrent = progress;
                             SharedPreferences.Editor editor = currentState.edit();
                             editor.putInt("brightness", brightnessCurrent);
                             editor.commit();
-                        } else {
 
-                            Snackbar snack = Snackbar.make(findViewById(R.id.snackbarLayout),
-                                    "Grant Permission", Snackbar.LENGTH_SHORT);
-                            SnackbarHelper.configSnackbar(getApplicationContext(), snack);
-                            snack.show();
                         }
-                    } else {
-                        Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE, 0);
-                        Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, progress);
-                        brightnessCurrent = progress;
-                        SharedPreferences.Editor editor = currentState.edit();
-                        editor.putInt("brightness", brightnessCurrent);
-                        editor.commit();
-
                     }
+                } catch (IllegalArgumentException e) {
+                    brightnessSeekbar.setMax(progress-1);
+                    Log.e("MaxNewBrightness", "onProgressChanged: MaxBrightnessChanged"+ (progress-1));
+                    SharedPreferences.Editor editor = currentState.edit();
+                    editor.putInt("maxbright", progress-1);
+                    editor.commit();
                 }
             }
 

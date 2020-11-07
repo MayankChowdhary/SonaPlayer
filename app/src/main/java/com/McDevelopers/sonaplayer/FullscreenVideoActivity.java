@@ -290,28 +290,40 @@ public class FullscreenVideoActivity extends AppCompatActivity implements Univer
             }
         });
 
-
+        int brightmax =currentState.getInt("maxbright",-1);
+        if(brightmax!=-1){
+            bSeekbar.setMax(brightmax);
+            Log.d("MaxSavedBrightness", "VideoActivity: MaxBrightnessSet: "+brightmax);
+        }
         bSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    if (Settings.System.canWrite(FullscreenVideoActivity.this)) {
+                try {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        if (Settings.System.canWrite(FullscreenVideoActivity.this)) {
+                            Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE, 0);
+                            Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, progress);
+                            brightnessCurrent=progress;
+                            SharedPreferences.Editor editor = currentState.edit();
+                            editor.putInt("brightness", brightnessCurrent);
+                            editor.commit();
+                        }
+                    }else {
                         Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE, 0);
                         Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, progress);
                         brightnessCurrent=progress;
                         SharedPreferences.Editor editor = currentState.edit();
                         editor.putInt("brightness", brightnessCurrent);
                         editor.commit();
-                    }
-                }else {
-                    Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE, 0);
-                    Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, progress);
-                    brightnessCurrent=progress;
-                    SharedPreferences.Editor editor = currentState.edit();
-                    editor.putInt("brightness", brightnessCurrent);
-                    editor.commit();
 
+                    }
+                } catch (Exception e) {
+                    bSeekbar.setMax(progress-1);
+                    Log.e("MaxNewBrightness", "onProgressChanged: MaxBrightnessChanged"+ (progress-1));
+                    SharedPreferences.Editor editor = currentState.edit();
+                    editor.putInt("maxbright", progress-1);
+                    editor.commit();
                 }
             }
 

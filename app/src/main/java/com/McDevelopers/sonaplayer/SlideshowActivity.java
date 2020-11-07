@@ -376,7 +376,7 @@ public class SlideshowActivity extends AppCompatActivity {
 
     @Override
     protected void onPause(){
-        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+       overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
         slideView.clearAnimation();
         albumArtChangerHandler.removeCallbacks(mAlbumArtChanger);

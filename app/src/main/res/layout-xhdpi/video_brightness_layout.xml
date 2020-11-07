@@ -12,14 +12,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <SeekBar
-            android:id="@+id/video_bright_seekbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:maxHeight="6dp"
-            android:minHeight="6dp"
-            android:max="255"
-            android:progressTint="@color/cyan"
-            android:thumbTint="@color/cyan" />
+    <SeekBar
+        android:id="@+id/video_bright_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:max="2000"
+        android:maxHeight="6dp"
+        android:minHeight="6dp"
+        android:progressTint="@color/cyan"
+        android:thumbTint="@color/cyan" />
     </com.github.rongi.rotate_layout.layout.RotateLayout>

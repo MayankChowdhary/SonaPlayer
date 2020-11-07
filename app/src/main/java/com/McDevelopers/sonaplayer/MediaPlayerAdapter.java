@@ -125,7 +125,6 @@ public final class MediaPlayerAdapter extends PlayerAdapter {
 
     private void initMediaPlayers(){
         releaseAll();
-
         Log.d("Initialization", "initMediaPlayers:Invoked ");
         mMediaPlayer=new MediaPlayer();
         xMediaPlayer=new MediaPlayer();
@@ -135,7 +134,6 @@ public final class MediaPlayerAdapter extends PlayerAdapter {
         xMediaPlayer.setWakeMode(mContext, PowerManager.PARTIAL_WAKE_LOCK);
         mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         xMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
         initializeMediaPlayerX();
         initializeMediaPlayer();
        equalizerHelper=new EqualizerHelper(mMediaPlayer.getAudioSessionId(),xMediaPlayer.getAudioSessionId(),true);
