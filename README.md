@@ -9,7 +9,7 @@ Click below link to download from Play Store:
   <tr>
     <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/newwelaxasda.png" >
 </td>
-    <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-dddScreejjhgzjnklmnshot1.png" >
+    <td><img src="https://drive.google.com/file/d/1UYoYlPD0x2ve-m9RK06LL7B5Ohm7d2Er/view?usp=drive_link" >
 </td>
     <td><img src="https://github.com/MayankChowdhary/SonaPlayer/blob/master/ScreenShots/Nexus%205x-Scjjrekwpqlsenshot1.png" >
 </td>
